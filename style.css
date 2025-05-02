@@ -39,6 +39,12 @@ h1 {
   text-align: center;
 }
 
+#devNotice {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #aaa;
+}
+
 #chatWindow {
   border: 1px solid white;
   padding: 10px;
@@ -76,6 +82,31 @@ h1 {
 
 #sendButton:hover {
   background-color: #ddd;
+}
+
+#dumbLevelArea {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#checkDumbLevel {
+  padding: 8px 16px;
+  background-color: #444;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  font-family: monospace;
+  margin-bottom: 5px;
+}
+
+#checkDumbLevel:hover {
+  background-color: #666;
+}
+
+#dumbResult {
+  font-size: 14px;
+  color: #ff6666;
+  margin-top: 5px;
 }
 
 #caLine {
