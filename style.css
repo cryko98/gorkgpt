@@ -1,10 +1,10 @@
 :root {
-  --primary: #00ff88;
-  --secondary: #00aaff;
-  --background: #121212;
-  --surface: #1e1e1e;
-  --text: #e0e0e0;
-  --text-secondary: #a0a0a0;
+  --primary: #cccccc;
+  --secondary: #aaaaaa;
+  --background: #000000;
+  --surface: #1a1a1a;
+  --text: #f0f0f0;
+  --text-secondary: #888888;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   background-color: var(--surface);
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
   position: relative;
 }
 
@@ -39,7 +39,7 @@ header {
   align-items: center;
   margin-bottom: 20px;
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #logo {
@@ -61,7 +61,7 @@ h1 {
   flex: 1;
   padding: 15px;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 4px;
   margin-bottom: 15px;
   scrollbar-width: thin;
@@ -111,9 +111,9 @@ h1 {
 #chatInput {
   flex: 1;
   padding: 12px 15px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
   color: var(--text);
-  border: 1px solid rgba(0, 255, 136, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   font-family: 'Courier New', monospace;
   font-size: 14px;
@@ -139,7 +139,7 @@ h1 {
 }
 
 #sendButton:hover {
-  background-color: #00e676;
+  background-color: #bbbbbb;
 }
 
 #caLine {
@@ -147,14 +147,14 @@ h1 {
   color: var(--text-secondary);
   text-align: center;
   padding-top: 10px;
-  border-top: 1px solid rgba(0, 255, 136, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 #commandHelp {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.1);
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 12px;
@@ -228,12 +228,12 @@ h1 {
     height: 100vh;
     border-radius: 0;
   }
-  
+
   header {
     flex-direction: column;
     text-align: center;
   }
-  
+
   #logo {
     margin-right: 0;
     margin-bottom: 10px;
