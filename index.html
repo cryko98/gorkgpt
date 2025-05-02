@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Gork GPT</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gork GPT - just gorkin' it</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div id="container">
     <header>
-      <img id="logo" src="https://pbs.twimg.com/profile_images/1917430483014897664/KkC-zpDA_400x400.jpg" alt="Logo" />
-      <h1>The Gork GPT</h1>
-      <div id="devNotice">⚠️ Still learning. Sadly, unlike you.</div>
+      <img id="logo" src="https://pbs.twimg.com/profile_images/1917430483014897664/KkC-zpDA_400x400.jpg" alt="Logo">
+      <h1>Gork GPT - just gorkin' it</h1>
     </header>
+
+    <div id="commandHelp" title="Show Help">?</div>
 
     <div id="chatWindow">
       <div id="chatOutput"></div>
+      <div id="typingIndicator" class="typing-indicator">Gork is typing...</div>
     </div>
 
     <div id="chatInputArea">
-      <input type="text" id="chatInput" placeholder="Ask something dumb..." />
+      <input type="text" id="chatInput" placeholder="Ask me anything or type /help for commands..." autocomplete="off">
       <button id="sendButton">Send</button>
     </div>
 
-    <div id="dumbLevelArea">
-      <button id="checkDumbLevel">Check My Dumb Level</button>
-      <div id="dumbResult"></div>
-    </div>
+    <div id="caLine">ca: xxxxxxxxxxxxxxxxxxxxxxxxx</div>
+  </div>
 
-    <div id="caLine">ca: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+  <div id="helpModal">
+    <div id="helpContent">
+      <span class="close-help">×</span>
+      <h2>Gork GPT Commands</h2>
+      <p>Here are the special commands you can use:</p>
+      <ul>
+        <li><span class="command">/help</span> - Show this help message</li>
+        <li><span class="command">/clear</span> - Clear the conversation</li>
+        <li><span class="command">/remember [text]</span> - Store information in memory</li>
+        <li><span class="command">/recall</span> - Recall stored information</li>
+        <li><span class="command">/forget</span> - Clear the memory</li>
+        <li><span class="command">/joke</span> - Tell a random joke</li>
+        <li><span class="command">/quote</span> - Get a random quote</li>
+        <li><span class="command">/fact</span> - Get a random fact</li>
+        <li><span class="command">/define [word]</span> - Define a word</li>
+        <li><span class="command">/calculate [expression]</span> - Calculate math expressions</li>
+        <li><span class="command">/ca</span> - Show the current CA value</li>
+        <li><span class="command">/setca [value]</span> - Set a new CA value</li>
+      </ul>
+      <h3>Conversation Features</h3>
+      <p>Gork GPT can remember context within a conversation and has knowledge about:</p>
+      <ul>
+        <li>Crypto & blockchain (Solana, Ethereum, Bitcoin)</li>
+        <li>Technology & programming</li>
+        <li>General knowledge</li>
+      </ul>
+    </div>
   </div>
 
   <script src="script.js"></script>
